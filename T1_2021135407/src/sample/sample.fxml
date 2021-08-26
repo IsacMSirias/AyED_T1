@@ -1,8 +1,16 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="380.0" prefWidth="342.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Sample">
+    <children>
+        <Button layoutX="79.0" layoutY="250.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="163.0" text="Clacular" />
+        <Label layoutX="24.0" layoutY="32.0" text="Precio" />
+        <Label layoutX="28.0" layoutY="82.0" text="Peso" />
+        <Label layoutX="29.0" layoutY="139.0" text="Impuesto" />
+        <TextField layoutX="97.0" layoutY="37.0" />
+        <TextField layoutX="97.0" layoutY="87.0" />
+        <TextField layoutX="97.0" layoutY="135.0" />
+    </children>
+</AnchorPane>
