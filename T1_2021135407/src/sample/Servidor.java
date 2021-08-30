@@ -1,3 +1,4 @@
+
 package sample;
 
 import javafx.scene.control.TextField;
@@ -29,7 +30,7 @@ class Servidor extends Conexion //Se hereda de conexión para hacer uso de los s
             //Se obtiene el flujo entrante desde el cliente
             BufferedReader entrada = new BufferedReader(new InputStreamReader(cs.getInputStream()));
 
-            salidaCliente.writeUTF(String.valueOf(Total));
+            salidaCliente.writeUTF(String.valueOf(Total)); //Le envia al cliente el valor de la operacion
 
         }
         catch (Exception e)

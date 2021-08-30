@@ -9,16 +9,35 @@ import javafx.scene.layout.AnchorPane;
 import java.io.DataOutputStream;
 import java.io.IOException;
 
-
+/**
+ * @author Isac Marin Sirias
+ * @version  29/08/2021
+ */
 public class Cliente extends Conexion
 {
+
+    /**
+
+     * Esta clase se define como el cliente  {@link Cliente} , en ella se encuentran los y atributos que se van a utilizar para poder tener
+     * una buena comunicacion entre los sockets.
+     *@throws IOException Por si ocurre algun error el cual no se tomó en cuenta
+
+     */
     public Cliente() throws IOException{super("cliente");} //Se usa el constructor para cliente de Conexion
 
-    public void startClient() throws IOException //Método para iniciar el cliente
+
+    /**
+
+     * Método que inicia la conexión del cliente.*
+     * @throws IOException Por si ocurre algun problema que no se tomó en cuenta
+
+
+     */
+    public void startClient() throws IOException //Metodo para iniciar el cliente
     {
 
-            //Flujo de datos hacia el servidor
-            salidaServidor = new DataOutputStream(cs.getOutputStream());
+
+        salidaServidor = new DataOutputStream(cs.getOutputStream());
 
             //Se enviarán dos mensajes
 
@@ -36,9 +55,9 @@ public class Cliente extends Conexion
                   int Precio = Integer.parseInt(this.TxBxPrecio.getAccessibleText());
 
 
-                  salidaServidor.writeUTF(String.valueOf(Peso));
-                  salidaServidor.writeUTF(String.valueOf(Impuesto));
-                  salidaServidor.writeUTF(String.valueOf(Precio));
+                  salidaServidor.writeUTF(String.valueOf(Peso)); // Se le envia al servidor el peso
+                  salidaServidor.writeUTF(String.valueOf(Impuesto)); // Se le envia al servidor el impuesto
+                  salidaServidor.writeUTF(String.valueOf(Precio)); // Se le envia al servidor el precio
 
 
               }
