@@ -1,13 +1,16 @@
 
 package sample;
-
-import javafx.scene.control.TextField;
-import javafx.scene.layout.AnchorPane;
-
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
+
+/**
+
+ * Esta clase se define como el Servidor   {@link Servidor} en la cual se encuentra lo necesario para que funcione el socket
+ */
+
 
 class Servidor extends Conexion //Se hereda de conexión para hacer uso de los sockets y demás
 {

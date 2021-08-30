@@ -10,8 +10,9 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 
 /**
- * @author Isac Marin Sirias
- * @version  29/08/2021
+
+ * Esta clase se define como el Conexion  {@link Cliente} em la cual se encuentra lo necesario para que funcionen los sockets
+
  */
 public class Cliente extends Conexion
 {
